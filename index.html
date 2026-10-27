@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunmint — Art Portfolio</title>
+  <meta name="description" content="Illustrations, line art, and paintings by Yunmint." />
+  <meta property="og:title" content="Yunmint — Art Portfolio" />
+  <meta property="og:description" content="Illustrations, line art, and paintings by Yunmint." />
+  <meta property="og:image" content="images/thumb/strawberry-bear.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="#" class="logo">yunmint<span>.</span></a>
+      <div class="nav-links">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">✿ illustration · line art · painting ✿</p>
+      <h1>Hi, I'm <span class="highlight">Yunmint</span></h1>
+      <p class="tagline">I draw cozy characters, spooky-cute pumpkins, and little moments worth keeping.</p>
+      <a href="#gallery" class="btn">See my work ↓</a>
+    </div>
+
+    <div class="hero-strip" aria-hidden="true">
+      <img src="images/thumb/strawberry-bear.jpg" alt="" />
+      <img src="images/thumb/snowy-mailbox.jpg" alt="" />
+      <img src="images/thumb/pumpkin-gentleman.jpg" alt="" />
+      <img src="images/thumb/christmas-cat.png" alt="" />
+    </div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="filters" role="tablist">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="digital">Digital</button>
+        <button class="filter" data-filter="lineart">Line Art</button>
+        <button class="filter" data-filter="painting">Painting</button>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-card">
+        <img src="images/thumb/honey-bear-pancake.png" alt="Honey bear pancake illustration" class="about-img" />
+        <div>
+          <h2>About me</h2>
+          <p>
+            I'm an artist who loves soft colors, round little creatures, and a good seasonal theme —
+            from Halloween pumpkins to snowy winter scenes. I work digitally, in ink line art,
+            and with acrylic paint on canvas.
+          </p>
+          <p>Every piece is signed <em>yunmint</em> — thanks for stopping by!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's connect</h2>
+      <p>Interested in a commission or just want to say hi?</p>
+      <div class="socials">
+        <a class="btn" href="https://github.com/yunmint" target="_blank" rel="noopener">GitHub</a>
+        <!-- Add your links, e.g.:
+        <a class="btn" href="https://instagram.com/yourname" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn" href="mailto:you@example.com">Email</a>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Yunmint · All artwork is my own. Please don't reuse without permission.</footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+    <figure>
+      <img id="lb-img" src="" alt="" />
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
