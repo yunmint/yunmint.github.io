@@ -79,6 +79,8 @@ h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.05; font-weight: 700;
   transition: transform .2s, background .2s;
 }
 .btn:hover { transform: translateY(-3px); background: var(--mint-dark); }
+.btn-icon { display: inline-flex; align-items: center; gap: .55rem; }
+.btn-icon:hover { background: linear-gradient(45deg, #f9a03f, #e1306c, #833ab4); }
 
 .hero-strip {
   position: relative; z-index: 2;
