@@ -198,7 +198,12 @@ h2 { font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 1.5rem; text-align: cen
 .contact p { color: var(--muted); margin-bottom: 1.5rem; }
 .socials { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-footer { text-align: center; padding: 2rem; color: var(--muted); font-size: .9rem; border-top: 1px solid #eee3d6; }
+footer {
+  display: flex; justify-content: space-between; align-items: center; gap: 1.5rem;
+  padding: 1.5rem 6vw; color: var(--muted); font-size: .9rem; border-top: 1px solid #eee3d6;
+}
+.flag-counter { flex-shrink: 0; line-height: 0; }
+.flag-counter img { border-radius: 8px; }
 
 /* ---------- Lightbox ---------- */
 .lightbox {
@@ -259,6 +264,7 @@ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: .9re
   .about-img { width: 120px; margin: 0 auto; }
   .mediums { justify-content: center; }
   .lb-nav { font-size: 2.5rem; top: auto; bottom: 1rem; transform: none; }
+  footer { flex-direction: column-reverse; text-align: center; padding: 1.5rem 5vw; }
 }
 
 /* Touch screens have no hover: always show titles */
